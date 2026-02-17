@@ -1,6 +1,7 @@
 # Use official Python image
 FROM python:3.11-slim
 
+
 # Prevent Python from writing .pyc files
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
@@ -41,4 +42,5 @@ EXPOSE 8080
 
 # Run Django server
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8080"]
+
 
